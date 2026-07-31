@@ -8,7 +8,7 @@
     border: none;
     transition: 0.2s linear;
     outline: none;
-    overflow-x: hidden;
+   
 }
 .header{
     display: flex;
@@ -40,17 +40,24 @@ header img{
     position: absolute;
     right: -100%;
     background: #fff;
+    width: 100%;
+    height: 100%;
 }
-
+.header #search_form{
+    position: absolute;
+    display: flex;
+    top: 40px;
+    right: 0px;
+}
 .header .navbar.active{
     right: 0px;
     display: flex;
     flex-direction: column;
     top: 20px;
     width: 120px;
-    height: 200px;
+    
     margin: 12px 0px;
-    overflow-y: hidden;
+    
 }
 .header .containar_cart{
     position: absolute;
@@ -58,6 +65,7 @@ header img{
     top: 32px;
     background: #fff;
     width: 250px;
+    height: 100%;
     
 }
 .header .containar_cart.active{
@@ -84,7 +92,7 @@ header img{
     height: 50px;
 }
 .header .containar_cart .cart_item .content{
-    position: absolute;
+   
     left: 80px;
     bottom: 11px;
 }
@@ -114,26 +122,93 @@ header img{
 }.header input.active{
     position: absolute;
     display: block;
-    right: 0px;
-    top: 20px;
+    right: 13px;
+    top: 25px;
     margin: 12px 0px;
-   
+   height: 20px;
+   width: 300px;
 }
-
+.header #search_form.active{
+    
+    right: 12px;
+    top: 40px;
+}
+.header #search_form{
+    right: -100%;
+}
+.icons{
+    position: absolute;
+    right: 7.5px;
+}
+.icons div{
+    margin: 7px;
+}
 /* تابلت */
 @media (max-width:991px){
     html{
-        font-size:55%;
+        font-size:100%;
+        overflow-x: hidden;
+
     }
 
     .header{
-        padding:1.5rem 2rem;
+        
+        position: relative;
+        width: 85%;
     }
+
+    .header .navbar{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: -110%;
+        width: 100%;
+    }
+    .header .navbar.active{
+    
+        top: 30px;
+        right: 0px;
+
+    }
+    .header .navbar a{
+        margin: 5px;
+    }
+    .header .containar_cart.active{
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        height: 340px;
+        
+    }
+    .header .cart_item{
+        margin: 20px;
+        flex-direction: column;
+    }
+    .header #input.active{
+        display: flex;
+        top: 28px;
+        right: 0px;
+    }
+    .icons{
+        margin: 0px 7px;
+        padding: 10px;
+        right: 20px;
+    }
+    header img{
+        position: absolute;
+        height: 35px;
+        margin: 2px;
+        left: 1.2px;
+        top: 1.2px;
+    }
+    
 }
 
 /* موبايل */
 @media (max-width:768px){
-
+    *{
+        overflow-y: hidden;
+    }
     #menu-btn{
         display:inline-block;
     }
