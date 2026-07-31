@@ -1,5 +1,4 @@
-
-*{
+* {
     padding: 0px;
     margin: 0px;
     text-transform: capitalize;
@@ -8,12 +7,15 @@
     border: none;
     transition: 0.2s linear;
     outline: none;
-   
+
 }
-html, body{
+
+html,
+body {
     overflow-x: hidden;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,246 +27,283 @@ html, body{
     left: 0;
     z-index: 9999;
 }
-body{
+
+body {
     background: gray;
 }
 
-header nav a{
+header nav a {
     margin: 15px;
     padding: 5px;
     color: black;
 }
-header nav a:hover{
-    
+
+header nav a:hover {
+
     border-radius: 30px;
     background: white;
     cursor: pointer;
-    
-}
-header img{
-    height: 27px;
+
 }
 
-.header .navbar{
+header img {
+    position: absolute;
+    height: 85%;
+    margin: 5px 8px;
+    top: 0%;
+
+}
+
+.header .navbar {
     position: absolute;
     right: -100%;
     background: #fff;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
-.header #search_form{
+
+.header #search_form {
     position: absolute;
     display: flex;
     top: 40px;
     right: 0px;
 }
-.header .navbar.active{
+
+.header .navbar.active {
     right: 0px;
     display: flex;
     flex-direction: column;
     top: 20px;
     width: 120px;
-    
+
     margin: 12px 0px;
-    
+
 }
-.header .containar_cart{
+
+.header .containar_cart {
     position: absolute;
     right: -100%;
     top: 32px;
     background: #fff;
     width: 250px;
     height: 100%;
-    
+
 }
-.header .containar_cart.active{
+
+.header .containar_cart.active {
     right: 0px;
 }
-.header .containar_cart .cart_item{
+
+.header .containar_cart .cart_item {
     position: relative;
     display: flex;
     text-align: center;
     justify-content: space-between;
     margin: 17px;
-    
+
 }
-.header .containar_cart .cart_item span{
+
+.header .containar_cart .cart_item span {
     position: absolute;
     right: 0px;
     cursor: pointer;
     font-size: 10px;
 }
-.header .containar_cart .cart_item span:hover{
+
+.header .containar_cart .cart_item span:hover {
     color: red;
 }
-.header .containar_cart .cart_item img{
+
+.header .containar_cart .cart_item img {
     height: 50px;
 }
-.header .containar_cart .cart_item .content{
-   
+
+.header .containar_cart .cart_item .content {
+
     left: 80px;
     bottom: 11px;
 }
-.header .containar_cart .cart_item .price{
+
+.header .containar_cart .cart_item .price {
     font-size: 13px;
     color: rgb(122, 117, 117);
 }
-.header .containar_cart .cart_item h2{
+
+.header .containar_cart .cart_item h2 {
     font-size: 17px;
     color: rgb(87, 81, 81);
 }
-.header .containar_cart .btn{
+
+.header .containar_cart .btn {
     color: white;
     border-radius: 5px;
     padding: 2px;
     background: rgb(0, 0, 0);
-    margin: 20px ;
+    margin: 20px;
     display: flex;
     font-style: italic;
-    
+
 }
-.header .containar_cart .btn:hover{
+
+.header .containar_cart .btn:hover {
     background: rgb(18, 121, 18);
 }
-.header input{
-    display: none;
-}.header input.active{
-    position: absolute;
+
+.header input {
     display: block;
-    right: 13px;
-    top: 25px;
-    margin: 12px 0px;
-   height: 20px;
-   width: 300px;
-}
-.header #search_form.active{
+    position: fixed;
+    display: flex;
     
-    right: 12px;
-    top: 40px;
+    right: -100%;
+    margin: -5px 4px;
+    height: 2.5%;
+    width: 95%;
+
 }
-.header #search_form{
+
+.header input.active {
+    right: 130px;
+}
+
+.header #search_form.active {
+
+    right: 12px;
+    top: 115%;
+}
+
+.header #search_form {
     right: -100%;
 }
-.icons{
+
+.icons {
     position: absolute;
     right: 7.5px;
 }
-.icons div{
+
+.icons div {
     margin: 7px;
 }
+
 /* تابلت */
-@media (max-width:991px){
-    html{
-        font-size:100%;
+@media (max-width:991px) {
+    html {
+        font-size: 100%;
         overflow-x: hidden;
 
     }
 
-    .header{
-        
-        position: relative;
-        width: 85%;
-    }
-
-    .header .navbar{
+    .header .navbar {
         position: absolute;
         display: flex;
         flex-direction: column;
         right: -110%;
         width: 100%;
     }
-    .header .navbar.active{
-    
+
+    .header .navbar.active {
+
         top: 30px;
         right: 0px;
 
     }
-    .header .navbar a{
+
+    .header .navbar a {
         margin: 5px;
     }
-    .header .containar_cart.active{
+
+    .header .containar_cart.active {
         position: absolute;
         top: 40px;
         right: 0px;
         height: 340px;
-        
+
     }
-    .header .cart_item{
+
+    .header .cart_item {
         margin: 20px;
         flex-direction: column;
     }
-    .header #input.active{
-        display: flex;
-        top: 28px;
-        right: 0px;
-    }
-    .icons{
+
+    .icons {
         margin: 0px 7px;
         padding: 10px;
         right: 20px;
     }
-    header img{
+
+    .header #search_form {
         position: absolute;
-        height: 35px;
-        margin: 2px;
-        left: 1.2px;
-        top: 1.2px;
+        display: none;
     }
-    
+
+    .header #search_form.active {
+        display: block;
+    }
+
+    .header #input.active {
+        display: flex;
+        top: 50px;
+        right: 8px;
+
+    }
+
 }
 
 /* موبايل */
-@media (max-width:768px){
-    body,html{
+@media (max-width:768px) {
+
+    body,
+    html {
         overflow-x: hidden;
     }
-    
 
-    .header .navbar{
-        right:-100%;
+
+    .header .navbar {
+        right: -100%;
     }
-    
-    .header .navbar.active{
-        right:0;
+
+    .header .navbar.active {
+        right: 0;
     }
 }
 
 /* موبايلات صغيرة */
-@media (max-width:450px){
-    html{
-        font-size:100%;
+@media (max-width:450px) {
+    html {
+        font-size: 100%;
         overflow-x: hidden;
     }
-    .icons{
-        font-size: 200%;
+
+    .header {
+        height: 40px;
     }
-    .header .navbar{
-        
+
+    .icons {
+        font-size: 120%;
+    }
+
+    .header .navbar {
+        position: absolute;
         display: flex;
-        right: -100px;
-        
+        right: -200px;
+        flex-direction: column;
+        width: 2rem;
     }
-    .header .navbar.active{
+
+    .header .navbar.active {
         top: 75px;
-        
+
     }
-    .header .containar_cart{
-        right: -100px;
-        
+
+    .header .containar_cart {
+        right: -300px;
+
     }
-    .header .containar_cart.active{
-        
+
+    .header .containar_cart.active {
+
         display: flex;
         top: 88px;
         flex-direction: column;
     }
-    .header input.active{
-    
-    display: flex;
-    right: 0px;
-    top: 77px;
-    margin: 12px 0px;
-    height: 22px;
-    }
-}
 
+}
