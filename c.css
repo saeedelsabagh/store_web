@@ -238,19 +238,15 @@ header img{
     .header .navbar{
         
         display: flex;
-        right: -1000px;
+        right: -100px;
         
     }
     .header .navbar.active{
-        
-        display: flex;
         top: 75px;
         
     }
     .header .containar_cart{
-        
-        display: flex;
-        right: -1000px;
+        right: -100px;
         
     }
     .header .containar_cart.active{
