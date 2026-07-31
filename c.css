@@ -210,12 +210,10 @@ header img{
 
 /* موبايل */
 @media (max-width:768px){
-    *{
+    body,html{
         overflow-x: hidden;
     }
-    #menu-btn{
-        display:inline-block;
-    }
+    
 
     .header .navbar{
         right:-100%;
