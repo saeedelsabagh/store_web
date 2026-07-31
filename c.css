@@ -226,6 +226,7 @@ header img{
 @media (max-width:450px){
     html{
         font-size:100%;
+        overflow-y: hidden;
     }
     .icons{
         font-size: 200%;
