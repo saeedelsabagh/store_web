@@ -10,6 +10,9 @@
     outline: none;
    
 }
+html, body{
+    overflow-x: hidden;
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -208,7 +211,7 @@ header img{
 /* موبايل */
 @media (max-width:768px){
     *{
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     #menu-btn{
         display:inline-block;
@@ -227,7 +230,7 @@ header img{
 @media (max-width:450px){
     html{
         font-size:100%;
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
     .icons{
         font-size: 200%;
