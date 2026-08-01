@@ -52,9 +52,9 @@ header img {
     height: 85%;
     margin: 5px 8px;
     top: 0%;
-    background:rgb(116, 110, 110);
+    background: rgb(116, 110, 110);
     color: rgb(116, 110, 110);
-   
+
 }
 
 .header .navbar {
@@ -66,8 +66,9 @@ header img {
     width: 100px;
     height: 1100%;
     top: 4000px;
-    margin: 1000px; 
+    margin: 1000px;
 }
+
 .header .navbar.active {
     right: 0px;
     display: flex;
@@ -76,12 +77,14 @@ header img {
     margin: 4% 0px;
 
 }
+
 .header #search_form {
     position: absolute;
     display: flex;
     top: 40px;
     right: 0px;
 }
+
 .header .containar_cart {
     position: absolute;
     right: -100%;
@@ -95,7 +98,7 @@ header img {
 }
 
 .header .containar_cart.active {
-   top: 254%;
+    top: 254%;
     right: 1%;
     height: 900%;
 }
@@ -159,7 +162,7 @@ header img {
     display: block;
     position: fixed;
     display: flex;
-    
+
     right: -100%;
     margin: -5px 4px;
     height: 2.5%;
@@ -189,12 +192,14 @@ header img {
 .icons div {
     margin: 7px;
 }
-.main{
+
+.main {
     position: absolute;
     left: 20px;
     top: 140px;
 }
-.main .write .btn{
+
+.main .write .btn {
     position: absolute;
     background: #000;
     border-radius: 3px;
@@ -202,21 +207,31 @@ header img {
     margin: 2% 5%;
     padding: 2% 4%;
 }
-.main .write .btn:hover{
+
+.main .write .btn:hover {
     background: rgb(18, 121, 18);
 }
-.main .write .heading,p{
+
+.main .write .heading,p {
     color: #fff;
 }
-body .img{
+
+body .img {
     position: absolute;
-    height: 68%;
+    height: 42%;
     width: 49%;
     left: 48%;
     top: 22%;
-    
+
     border-radius: 10px;
 }
+.aboutus_1 .aboutus_2 {
+    position: absolute;
+    top: 100%;
+    left: 2.5%;
+    color: #fff;
+}
+
 /* تابلت */
 @media (max-width:991px) {
     html {
@@ -225,7 +240,7 @@ body .img{
 
     }
 
-    
+
 
     .header .navbar.active {
 
@@ -237,12 +252,13 @@ body .img{
     .header .navbar a {
         margin: 5px;
     }
-    .header .containar_cart.active{
-        
-        
+
+    .header .containar_cart.active {
+
+
         margin: -92px -9px;
     }
-   
+
 
     .header .cart_item {
         margin: 20px;
@@ -272,6 +288,8 @@ body .img{
     }
 
 }
+
+
 
 /* موبايل */
 @media (max-width:767px) {
@@ -305,7 +323,7 @@ body .img{
     .icons {
         font-size: 120%;
     }
-    
+
     .header .navbar.active {
         margin: -35px -2px;
         top: 75px;
@@ -325,4 +343,19 @@ body .img{
         width: 250px;
     }
 
+    body .img {
+        position: absolute;
+        height: 28%;
+        width: 94%;
+        left: 3%;
+        top: 33%;
+
+        border-radius: 10px;
+    }
+    .main {
+        position: absolute;
+        left: 20px;
+        top: 90px;
+    }
+  
 }
