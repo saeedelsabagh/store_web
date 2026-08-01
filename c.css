@@ -189,7 +189,34 @@ header img {
 .icons div {
     margin: 7px;
 }
-
+.main{
+    position: absolute;
+    left: 20px;
+    top: 140px;
+}
+.main .write .btn{
+    position: absolute;
+    background: #000;
+    border-radius: 3px;
+    color: #fff;
+    margin: 2% 5%;
+    padding: 2% 4%;
+}
+.main .write .btn:hover{
+    background: rgb(18, 121, 18);
+}
+.main .write .heading,p{
+    color: #fff;
+}
+body .img{
+    position: absolute;
+    height: 68%;
+    width: 49%;
+    left: 48%;
+    top: 22%;
+    
+    border-radius: 10px;
+}
 /* تابلت */
 @media (max-width:991px) {
     html {
