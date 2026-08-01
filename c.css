@@ -193,7 +193,7 @@ header img {
     margin: 7px;
 }
 
-.main {
+.home {
      display: flex;
     justify-content: space-between;
     align-items: center;
@@ -230,7 +230,7 @@ body .img {
     height: auto;
     border-radius: 10px;
 }
-.aboutus_1{
+.about_us{
     padding: 40px 20px;
     margin-top: 40px 20px;
     
@@ -294,7 +294,7 @@ body .img {
         right: 8px;
 
     }
-    .main .write{
+    .home .write{
         font-size: .79rem;
     }
 }
@@ -360,14 +360,14 @@ body .img {
         border-radius: 10px;
         margin: 0px;
     }
-    .aboutus_1 .aboutus_2{
+    .about_us .aboutus_2{
         
         margin-top: 20px;
         padding: 20px;
         transform: none;
     }
     
-    .main{
+    .home{
     flex-direction: column;
     align-items: center;
     padding: 70px 20px 20px;
