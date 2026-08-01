@@ -373,11 +373,11 @@ body .img {
     padding: 70px 20px 20px;
     gap: 20px;
 }
-.aboutus_1{
+.aboutus_2{
     padding: 40px 20px;
     min-height: 300px;
     margin-top: 40px;
-
+    font-size: 12px;
 }
 
 }
