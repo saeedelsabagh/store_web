@@ -194,17 +194,22 @@ header img {
 }
 
 .main {
-    position: absolute;
-    left: 20px;
-    top: 140px;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 50px 50px;
+    gap: 40px;
+
 }
 
 .main .write .btn {
-    position: absolute;
+    display: flex;
     background: #000;
     border-radius: 3px;
     color: #fff;
-    margin: 2% 5%;
+    margin: 4% ;
+    height: 15px;
+    width: 90px;
     padding: 2% 4%;
 }
 
@@ -212,23 +217,26 @@ header img {
     background: rgb(18, 121, 18);
 }
 
-.main .write .heading,p {
+.main .write .heading {
     color: #fff;
 }
-
+.main .write p {
+    color: #fff;
+}
 body .img {
-    position: absolute;
-    height: 42%;
-    width: 49%;
-    left: 48%;
-    top: 22%;
-
+    display: flex;
+    width: 45%;
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
 }
-.aboutus_1 .aboutus_2 {
-    position: absolute;
-    top: 100%;
-    left: 2.5%;
+.aboutus_1{
+    padding: 40px 20px;
+    margin-top: 40px 20px;
+    background: #fff;
+
+}
+.aboutus_2{
     color: #fff;
 }
 
@@ -286,7 +294,9 @@ body .img {
         right: 8px;
 
     }
-
+    .main .write{
+        font-size: .79rem;
+    }
 }
 
 
@@ -344,18 +354,30 @@ body .img {
     }
 
     body .img {
-        position: absolute;
-        height: 28%;
-        width: 94%;
-        left: 3%;
-        top: 33%;
-
+        
+        height: auto;
+        width: 100%;
         border-radius: 10px;
+        margin: 0px;
     }
-    .main {
-        position: absolute;
-        left: 20px;
-        top: 90px;
+    .aboutus_1 .aboutus_2{
+        
+        margin-top: 20px;
+        padding: 20px;
+        transform: none;
     }
-  
+    
+    .main{
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px 20px;
+    gap: 20px;
+}
+.aboutus_1{
+    padding: 40px 20px;
+    min-height: 300px;
+    margin-top: 40px;
+
+}
+
 }
