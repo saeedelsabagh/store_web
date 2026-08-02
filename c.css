@@ -75,7 +75,7 @@ header img {
     top: 20px;
     width: 120px;
     margin: 4% 0px;
-
+    text-align: center;
 }
 
 .header #search_form {
@@ -162,28 +162,28 @@ header img {
     display: block;
     position: fixed;
     display: flex;
-
+    top: 14%;
     right: -100%;
     margin: -5px 4px;
-    height: 2.5%;
+    height: 4.5%;
     width: 95%;
 
 }
 
 .header input.active {
-    right: 130px;
+    right: 20px;
 }
 
-.header #search_form.active {
 
-    right: 12px;
-    top: 115%;
-}
 
 .header #search_form {
     right: -100%;
 }
+.header #search_form.active {
 
+    right: 26px;
+    top: 115%;
+}
 .icons {
     position: absolute;
     right: 7.5px;
@@ -220,17 +220,11 @@ header img {
     padding: 2% 4%;
 }
 
-.main .write .btn:hover {
+.home .write .btn:hover {
     background: rgb(18, 121, 18);
 }
 
-.main .write .heading {
-    color: #fff;
-}
 
-.main .write p {
-    color: #fff;
-}
 
 body .img {
     display: flex;
@@ -278,6 +272,8 @@ body .img {
     border: 3px solid #000;
     background: #665f5f;
     height: 80%;
+    border-radius: 20px;
+
 }
 .menu .box:hover {
     background: #fff;
@@ -309,8 +305,45 @@ body .img {
     background: rgb(18, 121, 18);
 
 }
+.review h1{
+    font-size: 200%;
+    display: grid;
+    text-align: center;
+    padding: 5%;
+    
+}
+.review .container_box{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 2%;
+}
+.review .container_box .box{
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #000;
+    background: #665f5f;
+    height: 90%;
+    border-radius: 20px;
+}   
+.review .container_box .box img{
+    height: 80px;
+    width: 80px;
+    border-radius:50% ;
+    object-fit: cover;
 
-
+}
+.review .container_box .box p{
+    font-size: 12px;
+}
+.review .container_box .box h3{
+    font-size: 70%;
+}
+.review .container_box .box .stars{
+    font-size: 70%;
+    margin: 10px ;
+}
 /* تابلت */
 @media (max-width:991px) {
     html {
