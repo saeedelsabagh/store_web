@@ -246,11 +246,13 @@ body .img {
     text-align: center;
     padding: 5%;
     color: #121212;
+    padding-top:140px ;
 }
 .aboutus_2 {
     color: #010101;
     font-size: 130%;
-    padding: 5%;
+    padding: 40px;
+    padding-bottom: 250px;
 
 }
 
@@ -264,6 +266,8 @@ body .img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
+    padding: 5px;
+    padding-bottom: 250px;
 }
 
 .menu .box {
@@ -318,6 +322,8 @@ body .img {
     justify-content: center;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 2%;
+    padding: 5px;
+    padding-bottom: 250px;
 }
 .review .container_box .box{
     padding: 10px;
@@ -326,6 +332,7 @@ body .img {
     background: #665f5f;
     height: 90%;
     border-radius: 20px;
+    
 }   
 .review .container_box .box img{
     height: 80px;
@@ -343,6 +350,66 @@ body .img {
 .review .container_box .box .stars{
     font-size: 70%;
     margin: 10px ;
+}
+.contact h1{
+    font-size: 200%;
+    display: grid;
+    text-align: center;
+    padding: 8% ;
+    color: #0f0404;
+}
+.contact h3{
+    font-size: 35px;
+    color: #fff;
+    padding: 5px;
+}
+.contact iframe{
+   flex: 1 1 450px;
+   width: 100%;
+   object-fit: cover;
+}
+.contact .container_box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    align-items:center;
+    background:#000;
+}
+.contact form{
+    flex:1 1 450px;
+    padding:50px 20px;
+    text-align: center;
+    
+}
+.contact .input_box{
+    display: flex;
+    align-items: center;
+    background: #222;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.contact .input_box input{
+    width: 100%;
+    padding: 20px;
+    background: none;
+    color: #fff;
+    text-transform: none;
+    font-size: 17px
+}
+.contact .input_box span{
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+.contact .btn{
+    background: white;
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+.contact .btn:hover{
+    background: rgb(18, 121, 18);
 }
 /* تابلت */
 @media (max-width:991px) {
@@ -486,5 +553,8 @@ body .img {
         margin-top: 40px;
         font-size: 12px;
     }
-
+    .contact h1{
+        padding-top: 290px;
+        padding-bottom: 60px;
+    }
 }
