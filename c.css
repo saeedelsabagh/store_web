@@ -192,13 +192,20 @@ header img {
 .icons div {
     margin: 7px;
 }
-
+.home .write h1{
+    font-size: 200%;
+    display: grid;
+    text-align: center;
+    padding: 5%;
+    color: #121212;
+}
 .home {
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 120px 50px 50px;
     gap: 40px;
+    font-size: 120%;
 
 }
 
@@ -207,7 +214,7 @@ header img {
     background: #000;
     border-radius: 3px;
     color: #fff;
-    margin: 4% ;
+    margin: 4%;
     height: 15px;
     width: 90px;
     padding: 2% 4%;
@@ -220,9 +227,11 @@ header img {
 .main .write .heading {
     color: #fff;
 }
+
 .main .write p {
     color: #fff;
 }
+
 body .img {
     display: flex;
     width: 45%;
@@ -230,15 +239,77 @@ body .img {
     height: auto;
     border-radius: 10px;
 }
-.about_us{
+
+.about_us {
     padding: 40px 20px;
     margin-top: 40px 20px;
-    
+
 
 }
-.aboutus_2{
-    color: #fff;
+.about_us h1{
+    font-size: 200%;
+    display: grid;
+    text-align: center;
+    padding: 5%;
+    color: #121212;
 }
+.aboutus_2 {
+    color: #010101;
+    font-size: 130%;
+    padding: 5%;
+
+}
+
+.menu h3{
+    font-size: 200%;
+    display: grid;
+    text-align: center;
+    padding: 5%;
+}
+.menu .container_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.menu .box {
+    padding: 10px;
+    text-align: center;
+    border: 3px solid #000;
+    background: #665f5f;
+    height: 80%;
+}
+.menu .box:hover {
+    background: #fff;
+}
+.menu .container_box .box img{
+    height: 70%;
+    width: 100%;
+}
+
+.menu .container_box .box .price {
+    font-size: 140%;
+}
+.menu .container_box .box .price span{
+    text-decoration: line-through;
+    font-size: 65%;
+}
+.menu .container_box .box a{
+    color: white;
+    border-radius: 2px;
+    padding: 2px;
+    background: rgb(0, 0, 0);
+    margin: 10% 5%;
+    display: flex;
+    font-style: italic;
+    display: grid;
+    text-align: center;
+}
+.menu .container_box .box a:hover{
+    background: rgb(18, 121, 18);
+
+}
+
 
 /* تابلت */
 @media (max-width:991px) {
@@ -294,7 +365,8 @@ body .img {
         right: 8px;
 
     }
-    .home .write{
+
+    .home .write {
         font-size: .79rem;
     }
 }
@@ -354,30 +426,32 @@ body .img {
     }
 
     body .img {
-        
+
         height: auto;
         width: 100%;
         border-radius: 10px;
         margin: 0px;
     }
-    .about_us .aboutus_2{
-        
+
+    .about_us .aboutus_2 {
+
         margin-top: 20px;
         padding: 20px;
         transform: none;
     }
-    
-    .home{
-    flex-direction: column;
-    align-items: center;
-    padding: 70px 20px 20px;
-    gap: 20px;
-}
-.aboutus_2{
-    padding: 40px 20px;
-    min-height: 300px;
-    margin-top: 40px;
-    font-size: 12px;
-}
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 20px 20px;
+        gap: 20px;
+    }
+
+    .aboutus_2 {
+        padding: 40px 20px;
+        min-height: 300px;
+        margin-top: 40px;
+        font-size: 12px;
+    }
 
 }
