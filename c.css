@@ -246,7 +246,7 @@ body .img {
     text-align: center;
     padding: 5%;
     color: #121212;
-    padding-top:140px ;
+    padding-top:14 0px ;
 }
 .aboutus_2 {
     color: #010101;
@@ -410,6 +410,59 @@ body .img {
 }
 .contact .btn:hover{
     background: rgb(18, 121, 18);
+}
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 200px;
+    padding-bottom: -10px;
+    flex-direction: column;
+}
+.footer .social a{
+    padding: 15px;
+    font-size: 28px;
+    border: 1px solid #585757;
+    color: #585757 ;
+    border-radius: 30px;
+    
+}
+.footer .social a:hover{
+    background:#fff;
+    color: #000;
+}
+.footer .end a{
+    padding: 15px;
+    font-size: 28px;
+    border: 1px solid #585757;
+    color: #585757 ;
+}
+.footer .end a:hover{
+    background:#fff;
+    color: #000;
+}
+.footer .ending span{
+    color: #941111;
+}
+.footer .ending span:hover{
+    color: #137d0b;
+    cursor: pointer;
+}
+.footer .end{
+    height: 100px;
+    background: #000;
+    margin: -32px;
+}
+.footer .ending{
+    height: 40px;
+    background: #000;
+    color: #585757 ;
+}
+.footer .social{
+    height: 100px;
+    background: #000;
+    padding: 10px;
 }
 /* تابلت */
 @media (max-width:991px) {
